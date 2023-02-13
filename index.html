@@ -4,45 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de multimedia</title>
+    <title>Etiquetas de formato de texto</title>
 </head>
 <body>
-    <area href="http://www.mozilla.com/firefox/"
-       alt="El navegador"
-       shape="rect"
-       coords="0,0,60,155"> <!-- area es un elemento antiguo con el que pueden hacerse mapas simples y poco accesibles. No se recomienda su uso, es preferible diseñar los mapas con elementos en bloque y anclas. -->
-
-       <audio src="audiotest_(1).ogg"
-       autoplay>
-     Your browser does not support the <code>audio</code> element.
-    </audio> <!-- El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5. -->
-
-
-    <img src="mdn-logo-sm.png" alt="MDN"> <!-- El elemento de imagen HTML representa una imagen en el documento. -->
-
-    <map> y </map> <!-- crea una caja que contiene atributos -->
-
-    <!-- Video y track -->
-    <video controls poster="/images/sample.gif">
-        <source src="sample.mp4" type="video/mp4">
-        <source src="sample.ogv" type="video/ogv">
-        <track kind="captions" src="sampleCaptions.vtt" srclang="en">
-        <track kind="descriptions"
-          src="sampleDescriptions.vtt" srclang="en">
-        <track kind="chapters" src="sampleChapters.vtt" srclang="en">
-        <track kind="subtitles" src="sampleSubtitles_de.vtt" srclang="de">
-        <track kind="subtitles" src="sampleSubtitles_en.vtt" srclang="en">
-        <track kind="subtitles" src="sampleSubtitles_ja.vtt" srclang="ja">
-        <track kind="subtitles" src="sampleSubtitles_oz.vtt" srclang="oz">
-        <track kind="metadata" src="keyStage1.vtt" srclang="en"
-          label="Key Stage 1">
-        <track kind="metadata" src="keyStage2.vtt" srclang="en"
-          label="Key Stage 2">
-        <track kind="metadata" src="keyStage3.vtt" srclang="en"
-          label="Key Stage 3">
-        <!-- Fallback -->
-      ...
-     </video> <!-- track: El elemento HTML (track)se utiliza como elemento hijo de los elementos multimedia, audio y video. Le permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente // Video: El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML.-->
-     
+    <a>El Elemento HTML Anchor (a) crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</a>
+    <abbr>El elemento HTML (abbr) (o Elemento de Abreviación HTML) representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. Si está presente, el atributo title debe contener la descripción completa y nada más.</abbr>
+    <b>b de bold=negrita.</b>
+    <bdi>El elemento _HTML  _(o elemento de aislamiento Bi-Direccional) aisla un trozo de texto para que pueda ser formateado con una dirección diferente al texto que hay fuera de él.</bdi>
+    <bdo>bdo Bi-Directional Overriding=Anulación de bidireccionalidad.</bdo>
+    <br>El elemento HTML line break <br> produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante
+    <cite> Está bastante estendido el mal uso de este elemento, mucha gente lo usa para marcar el texto de las citas en vez del autor, para marcar el texto están los elementos q (en línea) y blockquote (en bloque).</cite>
+    <code>Es el apropiado para marcar el código de un programa.</code>
+    <data>El Elemento HTML (data) vincula un contenido dado con una traducción legible por una máquina. Si el contenido está relacionado con time- o date-, debe usarse el elemento time.</data>
+    <dfn>Sirve para marcar el término que se quiere definir.</dfn>
+    <em>El elemento HTML (em) es el apropiado para marcar con énfasis las partes importantes de un texto. El elemento <em> puede ser anidado, con cada nivel de anidamiento indicando un mayor grado de énfasis.</em>
+    <i>Muestra el texto marcado con un estilo en cursiva o italica.</i>
+    <kbd>Marca el texto que debe introducir el usuario.</kbd>
+    <mark>El Elemento HTML Mark (mark) representa un texto marcado o resaltado como referencia o anotación, debido a su relevancia o importancia en un contexto particular.</mark>
+    <q>El elemento HTML (q) indica que el texto adjunto es una cita corta en línea. La mayoría de los navegadores modernos implementan esto rodeando el texto entre comillas. Este elemento está destinado a citas breves que no requieren saltos de párrafo; para citas de bloque independiente, utiliza el elemento blockquote.</q>
+    <rp> (en-US)</rp>El elemento HTML (rp) se utiliza para proporcionar paréntesis alternativos para los navegadores que no admiten la visualización de anotaciones Ruby mediante el elemento (ruby). Un elemento (rp) debe encerrar cada uno de los paréntesis de apertura y cierre que envuelven el elemento <rt> que contiene el texto de la anotación. 	
+    <rt> (en-US) </rt>El elemento HTML (rt) especifica el componente de texto ruby ​​de una anotación ruby, que se utiliza para proporcionar información de pronunciación, traducción o transliteración para la tipografía de Asia oriental. El elemento (rt) siempre debe estar contenido dentro de un elemento (ruby).
+    <ruby> (en-US) </ruby> El elemento HTML (ruby) representa pequeñas anotaciones que se representan encima, debajo o al lado del texto base, generalmente utilizadas para mostrar la pronunciación de los caracteres de Asia oriental. También se puede usar para anotar otros tipos de texto, pero este uso es menos común.
+    <s>Muestra el texto tachado con una linea horizontal.</s>
+    <small> El elemento HTML <small> hace el tamaño del texto una talla más pequeña (por ejemplo, de largo a mediano, o de pequeño a extra pequeño) que el tamaño mínimo de fuente del navegador. En HTML5, este elemento es reutilizado para representar comentarios laterales y letra pequeña, incluyendo derechos de autor y texto legal, independientemente de su estilo de presentación</small>
+    <span>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</span>
+    <strong>El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un texto.</strong>
+    <sub>El elemento HTML (sub) define un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo, y generalmente más pequeño, que el tramo principal del texto, es decir, en subíndice.</sub>
+    <sup>El elemento HTML (sup) define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto, y generalmente más pequeño, que el tramo </sup>
+    <time>El elemento HTML (time) representa un periodo específico en el tiempo. Puede incluir el atributo datetime para convertir las fechas en un formato interno legible por un ordenador, permitiendo mejores resultados en los motores de búsqueda o características personalizadas como recordatorios.</time>
+    <u>Muestra el texto subrayado.</u>
+    <var>Marca variables de programas y similares.</var>
+    <wbr> El elemento HTML word break opportunity <wbr> representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición .En páginas codificadas en UTF-8 , <wbr> se comporta como el punto de código U+200B ZERO-WIDTH SPACE. En particular se comporta como un punto de código unicode bidi BN , significando esto que no tiene efecto en ordenamiento bidi : <div dir=rtl>123,<wbr>456</div> muestra , cuando no se rompa en dos líneas , 123, 456 y no 456 , 123 .
 </body>
 </html>

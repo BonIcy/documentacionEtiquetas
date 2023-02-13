@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de parrafos</title>
+    <title>Etiquetas de multimedia</title>
 </head>
 <body>
-    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde delectus maxime minus iste alias ducimus soluta ipsam id laborum quia magnam sequi ullam dignissimos tempora, totam maiores quos quod!</blockquote>
-    <dd>El elemento HTML  provee detalles acerca de o la definición de un término precedente (dt) en una lista de descripciones (dl).</dd>
-    <div></div>
-    <d1>Representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento dt) y de descripciones (proveídas con elementos dd.</d1>
-    <dt>Especifica un término en una descripción o lista de definiciones, y como tal debe utilizarse dentro de un elemento dl Es usualmente seguido por un elemento dd.</dt>
-    <figcaption>Representa un subtítulo o leyenda asociado al contenido del elemento padre figure, pudiendo ser colocado como primer o último hijo.</figcaption>
-    <figure>Representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal.</figure>
-    <hr/> Solo tiene esta etiqueta.
-    <li></li>
-    <menu></menu>
-    <ol></ol>
-    <p></p>
-    <pre> Representa texto preformateado. El texto en este elemento típicamente se muestra en una fuente fija, no proporcional, exactamente como es mostrado en el archivo.</pre>
-    <ul></ul>
+    <area href="http://www.mozilla.com/firefox/"
+       alt="El navegador"
+       shape="rect"
+       coords="0,0,60,155"> <!-- area es un elemento antiguo con el que pueden hacerse mapas simples y poco accesibles. No se recomienda su uso, es preferible diseñar los mapas con elementos en bloque y anclas. -->
+
+       <audio src="audiotest_(1).ogg"
+       autoplay>
+     Your browser does not support the <code>audio</code> element.
+    </audio> <!-- El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5. -->
+
+
+    <img src="mdn-logo-sm.png" alt="MDN"> <!-- El elemento de imagen HTML representa una imagen en el documento. -->
+
+    <map> y </map> <!-- crea una caja que contiene atributos -->
+
+    <!-- Video y track -->
+    <video controls poster="/images/sample.gif">
+        <source src="sample.mp4" type="video/mp4">
+        <source src="sample.ogv" type="video/ogv">
+        <track kind="captions" src="sampleCaptions.vtt" srclang="en">
+        <track kind="descriptions"
+          src="sampleDescriptions.vtt" srclang="en">
+        <track kind="chapters" src="sampleChapters.vtt" srclang="en">
+        <track kind="subtitles" src="sampleSubtitles_de.vtt" srclang="de">
+        <track kind="subtitles" src="sampleSubtitles_en.vtt" srclang="en">
+        <track kind="subtitles" src="sampleSubtitles_ja.vtt" srclang="ja">
+        <track kind="subtitles" src="sampleSubtitles_oz.vtt" srclang="oz">
+        <track kind="metadata" src="keyStage1.vtt" srclang="en"
+          label="Key Stage 1">
+        <track kind="metadata" src="keyStage2.vtt" srclang="en"
+          label="Key Stage 2">
+        <track kind="metadata" src="keyStage3.vtt" srclang="en"
+          label="Key Stage 3">
+        <!-- Fallback -->
+      ...
+     </video> <!-- track: El elemento HTML (track)se utiliza como elemento hijo de los elementos multimedia, audio y video. Le permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente // Video: El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML.-->
+     
+
 </html>

@@ -4,19 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de tablas</title>
+    <title>Etiquetas de lista</title>
 </head>
 <body>
-    <caption></caption><!-- Es el encargado de darle un título descriptivo a las tablas. -->
-    <col> <!-- Permite especificar propiedades para una columna o un grupo de ellas. -->
-    <colgroup></colgroup> <!-- Grupo de columnas. Permite crear grupos de columnas.
-        Sus etiquetas son: <colgroup> y </colgroup> (la de cierre es opcional). -->
-    <table></table> <!-- representa datos en dos o mas dimensiones. -->
-    <tbody> (en-US)</tbody> <!-- El elemento HTML <tbody> encapsula un conjunto de filas de tabla (elementos <tr>), lo que indica que comprenden el cuerpo de la tabla (<table>).-->
-    <td></td><!-- El elemento HTML Celda de tabla (<td>) define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas. -->
-    <tfoot> (en-US)</tfoot><!-- El elemento HTML <tfoot> define un conjunto de filas que resumen las columnas de la tabla. -->
-    <th></th><!-- El elemento HTML <th> define una celda como encabezado de un grupo de celdas en una tabla. La naturaleza exacta de este grupo está definida por los atributos scope y headers.-->
-    <thead> (en-US)</thead><!-- El elemento HTML <thead> define un conjunto de filas que definen el encabezado de las columnas de la tabla. -->
-    <tr></tr><!-- El elemento HTML fila de tabla (table row) <tr> define una fila de celdas en una tabla. Estas pueden ser una mezcla de elementos <td> y <th>.-->
+    <!--  Lista ordenada
+El elemento ol permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente.
+
+    Sus etiquetas son: <ol> y </ol> (ambas obligatorias).
+
+    Crea una caja: en bloque.
+
+    Está definido como: Elemento de lista.
+
+    Puede contener: uno o más elementos li
+ -->
+ <ol>
+    <li>punto uno</li>
+    <li>punto dos</li>
+    <li>punto tres</li>
+   </ol>
+
+
+ <!-- Las listas no ordenadas van dentro de la etiqueta <ul> HTML y de su cierre </ul>. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta <li> y su cierre.
+
+Si no le indicamos nada a la etiqueta <li> HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.
+
+Así podemos hacer que la lista esté definida por puntos negros (li type=”disc”), por puntos con el fondo blanco (li type=”circle”) o por cuadrados (li type=”square”). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos. -->
+ 
+   <ul>
+
+    <li type="circle">Esto es un tipo de punto.</li>
+    
+    <li type="square">Este es otro.</li>
+    
+    <li type="disc">Y este es otro diferente.</li>
+    
+    </ul>
+
+
+<!-- Listas de definiciones 
+amos a explicarlas por partes:
+
+La etiqueta <dl> viene de los términos ingleses “Definiton list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.
+
+La etiqueta <dt> viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de <dt> iría el título de la definición.
+
+La etiqueta <dd> viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.
+
+Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.-->
+
+    <dl>
+
+    <dt>Aquí va el término que definiremos</dt>
+    
+    <dd>Y aquí dentro irá la definición propiamente dicha.</dd>
+    
+    </dl>
+    
+    <dl>
+    
+    <dt>Aquí va la segunda definición</dt>
+    
+    <dd>Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.</dd>
+    
+    </dl>
+
 </body>
 </html>
